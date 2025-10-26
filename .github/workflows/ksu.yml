@@ -18,23 +18,23 @@ jobs:
     - name: Ksu CI
       uses: ./
       with:
-          kernel-url: https://github.com/Fyg369/mcd_kernel_oneplus_sdm845
+          kernel-url: https://github.com/Vynxid/android_kernel_xiaomi_sm8150_419
           kernel-dir: ksu
-          kernel-branch: mcd-OOS-R
-          config: mcd_ksu_defconfig
+          kernel-branch: lineage-23.0_vayu
+          config: vendor/sm8150-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 12
-          aosp-clang-version: r416183b
+          android-version: 16
+          aosp-clang-version: r547379
           ksu: true
           ksu-version: nongki
           ksu-other: true
           ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
           lxc: true
           lxc-patch: true
-          nethunter: true
-          nethunter-patch: true
+          nethunter: false
+          nethunter-patch: false
           bbrplus: true
           zram: true
           anykernel3: true
