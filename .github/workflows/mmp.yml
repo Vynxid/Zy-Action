@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v5
+      uses: actions/checkout@v4
 
     - name: Mmp CI
       uses: ./
@@ -27,9 +27,12 @@ jobs:
           aosp-clang: true
           android-version: 12
           aosp-clang-version: r416183b
-          lxc: true
-          lxc-patch: true
+          ksu: true
+          ksu-version: next
+          ksu-other: true
+          ksu-url: https://github.com/rifsxd/KernelSU-Next
           nethunter: true
           nethunter-patch: true
           bbrplus: true
-          anykernel3: true
+          zram: true
+          bootimg-url: https://github.com/Fyj69/patch/raw/main/boot/boot.img
