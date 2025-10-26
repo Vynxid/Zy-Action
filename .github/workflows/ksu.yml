@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v5
+      uses: actions/checkout@v4
 
     - name: Ksu CI
       uses: ./
@@ -28,12 +28,13 @@ jobs:
           android-version: 12
           aosp-clang-version: r416183b
           ksu: true
-          ksu-version: next
+          ksu-version: nongki
           ksu-other: true
-          ksu-url: https://github.com/rifsxd/KernelSU-Next
+          ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
           lxc: true
           lxc-patch: true
           nethunter: true
           nethunter-patch: true
           bbrplus: true
+          zram: true
           anykernel3: true
