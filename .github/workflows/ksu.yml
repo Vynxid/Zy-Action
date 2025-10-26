@@ -19,7 +19,6 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/Vynxid/android_kernel_xiaomi_sm8150_419
-          kernel-dir: ksu
           kernel-branch: lineage-23.0_vayu
           config: vendor/sm8150-perf_defconfig
           arch: arm64
