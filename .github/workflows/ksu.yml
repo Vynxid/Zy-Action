@@ -23,9 +23,9 @@ jobs:
           kernel-branch: lineage-23.0_vayu
           config: vendor/sm8150-perf_defconfig
           arch: arm64
-          aosp-gcc: false
+          aosp-gcc: true
           aosp-clang: true
-          android-version: 16
+          android-version: 15
           aosp-clang-version: r547379
           ksu: true
           ksu-version: nongki
